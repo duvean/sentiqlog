@@ -7,6 +7,7 @@ export type Entry = {
   date: string
   createdAt: number
   updatedAt: number
+  completed?: boolean
   person: string
   what: string
   when: string

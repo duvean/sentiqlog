@@ -9,6 +9,8 @@ npm install
 npm run dev
 ```
 
+Откройте адрес, который покажет Vite — по умолчанию это `http://127.0.0.1:5173/`.
+
 ## Cloudflare Pages
 
 Подключите Git‑репозиторий в Cloudflare Pages и укажите:
