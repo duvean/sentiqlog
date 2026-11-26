@@ -15,6 +15,11 @@ export default defineConfig({
       lang: 'ru',
       icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }]
     },
-    workbox: { globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'] }
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+      cleanupOutdatedCaches: true,
+      clientsClaim: true,
+      skipWaiting: true
+    }
   })]
 })
