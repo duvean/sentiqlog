@@ -8,12 +8,31 @@ export default defineConfig({
     manifest: {
       name: 'Сенти — дневник эмоций',
       short_name: 'Сенти',
-      description: 'Бережный дневник эмоций',
+      description: 'Дневник эмоций',
       theme_color: '#f4b4d2',
       background_color: '#fbf2f7',
       display: 'standalone',
       lang: 'ru',
-      icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }]
+      "icons": [
+      {
+        "src": "/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/maskable-icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
